@@ -1,5 +1,6 @@
 let arr1 = [1, 2, 3, 5, 8, 9, 10, 34];
 let arr2 = [5, 16, 1, 3, 4, 6];
+// 找出兩筆陣列中相同的數字, 並返回一個全新的陣列
 
 //O(n*n)
 function fun1(arr1, arr2) {
@@ -14,7 +15,7 @@ function fun1(arr1, arr2) {
   return result;
 }
 
-
+// 使用 counter 的idea
 //  O(n)
 function counter(arr1, arr2) {
   let arr3 = arr1.concat(arr2);

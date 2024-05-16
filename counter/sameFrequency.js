@@ -1,4 +1,5 @@
 //O(n)
+// 比較字串是否相等
 function sameFrequency(str1, str2) {
   let counter1 = {};
   let counter2 = {};
@@ -33,8 +34,6 @@ function sameFrequency(str1, str2) {
 const res = sameFrequency("abbc", "acbb");
 console.log("res", res);
 
-
-
 // gpt
 function sameFrequency2(str1, str2) {
   if (str1.length !== str2.length) {
@@ -50,7 +49,7 @@ function sameFrequency2(str1, str2) {
 
   for (let char of str2) {
     if (!counter[char]) {
-        console.log("counter false", counter);
+      console.log("counter false", counter);
       return false;
     }
     counter[char]--;
@@ -62,4 +61,3 @@ function sameFrequency2(str1, str2) {
 
 const res2 = sameFrequency2("acba", "aaac");
 console.log(res2); // true
-

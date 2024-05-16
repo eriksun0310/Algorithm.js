@@ -7,7 +7,8 @@ let numbers = [
   243, 248, 251, 252, 257, 260, 260, 263, 268, 270, 271, 271, 276, 281, 284,
   285, 295, 297, 298,
 ];
-
+// 二進位搜尋: 只是用已排序過的array
+// 找出數字在陣列中的位置
 function binarySearch(arr, n) {
   let min = 0;
   let max = arr.length - 1;
