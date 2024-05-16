@@ -1,4 +1,4 @@
-function a(arr, sum) {
+function minSubLength(arr, sum) {
   let minLength = Infinity
   let left = 0;
   let right = 0;
@@ -16,6 +16,12 @@ function a(arr, sum) {
       currentSum -= arr[left];
       left++;
     }
+  }
+
+  if(minLength === Infinity){
+    return 0
+  }else {
+    return minLength
   }
 }
 
